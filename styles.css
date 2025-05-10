@@ -1,1 +1,31 @@
 /*  your css code here. If applicable */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
