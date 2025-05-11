@@ -1,19 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eef;
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     margin: 0;
 }
 
-.container {
-    background-color: white;
+.outer-box {
+    border: 5px solid #333;
     padding: 30px;
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     text-align: center;
+    width: 400px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+h2 {
+    margin-bottom: 20px;
 }
 
 table {
@@ -22,20 +28,26 @@ table {
     margin-bottom: 20px;
 }
 
-table, td {
-    border: 1px solid #ccc;
+td {
     padding: 10px;
+}
+
+.double-box {
+    border: 3px double #555;
+    padding: 10px;
+    background-color: #f9f9f9;
+    font-weight: bold;
     text-align: center;
 }
 
 button {
+    background-color: #007bfc;
+    color: #fff;
+    border: none;
     padding: 10px 20px;
+    border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #007bfc;
-    color: white;
-    border: none;
-    border-radius: 5px;
 }
 
 button:hover {

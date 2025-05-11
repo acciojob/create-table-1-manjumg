@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Insert Row Example</title>
+    <title>Double Box Table</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Dynamic Table</h2>
+    <div class="outer-box">
+        <h2>Table with Row Names</h2>
         <table id="sampleTable">
             <tr>
-                <td>Row 1 Cell 1</td>
-                <td>Row 1 Cell 2</td>
+                <td><div class="double-box">Row 1</div></td>
+                <td><div class="double-box">Row 1</div></td>
             </tr>
             <tr>
-                <td>Row 2 Cell 1</td>
-                <td>Row 2 Cell 2</td>
+                <td><div class="double-box">Row 2</div></td>
+                <td><div class="double-box">Row 2</div></td>
             </tr>
         </table>
         <button onclick="insert_Row()">Insert row</button>

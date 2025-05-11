@@ -1,13 +1,14 @@
+let rowCounter = 3; // Start from 3 since two rows already exist
+
 function insert_Row() {
-    // Get reference to the table
     const table = document.getElementById("sampleTable");
 
-    // Create a new row and two cells
-    const newRow = table.insertRow(0); // Insert at the top
-    const newCell1 = newRow.insertCell(0);
-    const newCell2 = newRow.insertCell(1);
+    const newRow = table.insertRow(0);
+    const cell1 = newRow.insertCell(0);
+    const cell2 = newRow.insertCell(1);
 
-    // Set the cell values
-    newCell1.textContent = "New Cell1";
-    newCell2.textContent = "New Cell2";
+    const rowName = `Row ${rowCounter++}`;
+
+    cell1.innerHTML = `<div class="double-box">${rowName}</div>`;
+    cell2.innerHTML = `<div class="double-box">${rowName}</div>`;
 }
