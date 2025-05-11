@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Double Box Table</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Insert Row - Test Ready</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="outer-box">
-        <h2>Table with Row Names</h2>
-        <table id="sampleTable">
-            <tr>
-                <td><div class="double-box">Row 1</div></td>
-                <td><div class="double-box">Row 1</div></td>
-            </tr>
-            <tr>
-                <td><div class="double-box">Row 2</div></td>
-                <td><div class="double-box">Row 2</div></td>
-            </tr>
-        </table>
-        <button onclick="insert_Row()">Insert row</button>
-    </div>
-    <script src="script.js"></script>
+  <div class="outer-box">
+    <h2>Sample Table</h2>
+    <table id="sampleTable">
+      <tr>
+        <td><div class="double-box">Row 1 Cell 1</div></td>
+        <td><div class="double-box">Row 1 Cell 2</div></td>
+      </tr>
+      <tr>
+        <td><div class="double-box">Row 2 Cell 1</div></td>
+        <td><div class="double-box">Row 2 Cell 2</div></td>
+      </tr>
+    </table>
+
+    <!-- ✅ This matches the Cypress test case selector -->
+    <input type="button" value="Insert row" onclick="insert_Row()" />
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
